@@ -5,7 +5,7 @@
 
 登陆页面展示：
 
-![one](https://pic1.imgdb.cn/item/6442953e0d2dde5777d75032.png)
+![one](./assets/one.png)
 
 来源：
 
