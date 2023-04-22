@@ -16,7 +16,7 @@ body {
     align-items: center;
     /* 设置元素的高度为视口（viewport）高度的百分之百 */
     height: 100vh;
-    background: url(./image/bg.jpg) no-repeat;
+    background: url(./images/bg.jpg) no-repeat;
     background-size: cover;
 }
 
