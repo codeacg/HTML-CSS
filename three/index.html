@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>不偷看密码的猫头鹰</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+        window.addEventListener('DOMContentLoaded', function () {
+            var password = document.getElementById('password');
+            var owl = document.getElementById('owl');
+
+            password.addEventListener('focus', function () {
+                // 密码框获得焦点, 追加样式 .password
+                owl.classList.add('password');
+            });
+
+            password.addEventListener('blur', function () {
+                // 密码框失去焦点, 移除样式.password
+                owl.classList.remove('password');
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="login-box">
+        <div id="owl" class="owl">
+            <div class="hand"></div>
+            <div class="hand hand-r"></div>
+            <div class="arms">
+                <div class="arm"></div>
+                <div class="arm arm-r"></div>
+            </div>
+        </div>
+        <div class="input-box">
+            <input type="text" placeholder="账号">
+            <input id="password" type="password" placeholder="密码">
+            <button>登录</button>
+        </div>
+    </div>
+</body>
+
+</html>
